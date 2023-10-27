@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 13pt;
+  margin: 30px;
+  color: #5151c0;
+  border-left: 3px solid #29ac29;
+  padding-left: 8px;
+}
+
+.menu {
+  padding: 20px;
+  display: flex;
+  margin-right: 30px  ;
+}
+
+.menuItem {
+  position: relative;
+  font-weight: bold;
+  margin: 20px 60px;
+  font-size: 12pt;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menuItem::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  background-color: #145714;
+  transition: 0.3s;
+}
+
+.menuItem:hover::after {
+  width: 100%;
+}
+
+.hero {
+  margin: 120px 350px;
+}
+
+.heroText {
+  width: 350px;
+  margin-top: 180px;
+  font-size: 12pt;
+}
+
+.heroText button {
+  width: 120px;
+  padding: 10px;
+  background-color: #5151c0;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.heroText button i {
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.heroText button:hover {
+  background-color: #145714;
+  transition: .4s;
+}
+
+.hero img {
+  width: 300px;
+  margin-left: 380px;
+  margin-top: -300px;
+}
